@@ -5,3 +5,14 @@ todo2: each letter of the given text should pick a random color from the colors 
 todo3: finally display the text in the html file.
 */
 const colors = ['red', 'aqua', 'orange', 'purple', 'lightgreen'];
+
+
+const text = prompt("Enter your text:");
+let coloredText = "";
+
+for (let i = 0; i < text.length; i++) {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  coloredText += `<span style="color: ${randomColor}">${text[i]}</span>`;
+}
+
+document.body.innerHTML = coloredText;
