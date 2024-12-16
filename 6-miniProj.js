@@ -7,3 +7,13 @@
 //todo2: Completed challenge has background green
 //todo3: Ongoing challenge has background yellow
 //todo4: Coming challenges have background red
+const h1 = document.querySelector('h1');
+setTimeout(()=>{
+    h1.style.backgroundColor="green"
+},1000);
+setTimeout(()=>{
+     h1.style.backgroundColor="yellow"
+},2000);
+setTimeout(()=>{
+     h1.style.backgroundColor="red"
+},3000);
